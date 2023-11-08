@@ -1,0 +1,295 @@
+body {
+    background-color: #24afc1;
+}
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+.container-principal {
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+    color: #c9c9c9;
+}
+
+/*cabeçalho da página princial*/
+header {
+    width: 100%;
+    height: 75px;
+    background-color: #24afc1;
+    position: relative;
+    top: 0;
+}
+
+.logo {
+    position: absolute;
+    width: 250px;
+    height: auto;
+}
+
+.logo img {
+    width: 75%;
+    margin-left: 10%;
+    margin-top: 6%;
+}
+
+nav {
+    position: absolute;
+    right: 30px;
+    bottom: 3px;
+}
+nav ul li {
+    float: left;
+    color: #24afc1;
+    width: auto;
+    margin: 0.8em;
+    font-size: 1.6em;
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #f8f8f8;
+}
+
+nav ul li a:hover {
+    color: #1785a8;
+}
+
+/* definir as prorpiedades da imagem principal */
+#banner {
+    width: 100%;
+}
+
+#banner img {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+/* definir as propriedades dos pop ups */
+
+.modalDialog {
+    position: fixed;
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 99999;
+    opacity: 1;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    display: none;
+}
+
+.modalDialog:target {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog div {
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 10px;
+    background-color: #1795a8;
+}
+
+.modalDialog p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.modalDialog img {
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+}
+
+.close {
+    background-color: #fccf47;
+    color: #1795a8;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.close:hover {
+    background-color: #b50909;
+}
+
+footer {
+    width: 100%;
+    height: 18%;
+    background-color: #24afc1;
+    color: #ffffff;
+    position: relative;
+    float: left;
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+footer .footer-text {
+    width: 30%;
+    margin: 1%;
+    position: relative;
+    float: left;
+}
+
+footer .footer-text a {
+    color: #fccf47;
+}
+
+/* Define a cor de fundo das páginas sobre, clientes e contato */
+
+.color-page {
+    background-color: #1795a8;
+}
+
+/* defirnir as propriedades das imagens de titulo*/
+.img-title {
+    width: 20%;
+    height: auto;
+    margin-bottom: 10px;
+    position: relative;
+    float: left;
+    margin-right: 5%;
+}
+
+.img-title img {
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+/*Definir as propriedades da página clientes*/
+
+#clientes-code {
+    width: 75%;
+    position: relative;
+    float: left;
+}
+
+#clientes-code .config-clientes {
+    width: 40%;
+    border: 2px solid #fccf47;
+    border-radius: 5px;
+    margin-left: 1.5%;
+    padding: 1%;
+    float: left;
+    margin-top: 30px;
+    background-color: #1795a8;
+}
+#clientes-code .config-clientes img {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+
+#clientes-code .config-clientes p {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#cliente-code .cofig-clientes p a {
+    color: #111111;
+}
+/* definir as propriedades da página contato*/
+
+#txt-contato {
+    width: 100%;
+    height: 100%;
+}
+
+#txt-contato form {
+    width: 38%;
+    position: relative;
+    border-radius: 20px;
+    float: left;
+    background-color: #f8f8f8;
+    padding: 2%;
+    top: 5%;
+    min-height: 400px;
+}
+
+#txt-contato form label {
+    font-weight: bold;
+    color: #24afc1
+}
+
+#txt-contato form input {
+    max-width: 100%;
+    width: 99%;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: solid #fccf47 1px;
+    padding-left: 1%;
+}
+
+#txt-contato form textarea {
+    max-width: 100%;
+    width: 99%;
+    border-radius: 10px;
+    border: solid #fccf47 1px;
+    padding-left: 1px;
+    min-height: 100px;
+}
+
+#txt-contato form button {
+    width: 30%;
+    height: auto;
+    border-radius: 50px;
+    border-color:#fccf47;
+    cursor: pointer;
+    background-color: #fccf47;
+    color: #f8f8f8;
+    font-size: 1.5em;
+    padding: 15px 0 15px 0;
+    margin-left: 35%;
+    margin-top: 1%;
+}
+
+#txt-contato #conta-data {
+    width:26%;
+    position: relative;
+    float: left;
+    padding: 2%;
+    color: #ffffff;
+    top: 5%;
+    margin-left: 1.5%;
+    height: 400px;
+    text-align: center;  
+}
+
+#txt-contato #conta-data h3 {
+    color: #ffffff;
+    text-align: center;
+}
+
+#txt-contato #conta-data h5 {
+    margin-top: 5%;
+    margin-bottom: 4%;
+    vertical-align: middle;
+}
+
+#txt-contato #conta-data h5 img {
+    width: 50px;
+}
